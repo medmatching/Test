@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script type="text/javascript">
+        $(document).ready(function () {
+                          var latitude = parseFloat("51.515252");
+                          var longitude = parseFloat("-0.189852");
+                          var latlngPos = new google.maps.LatLng(latitude, longitude);
+                          // Set up options for the Google map
+                          var myOptions = {
+                          zoom: 10,
+                          center: latlngPos,
+                          mapTypeId: google.maps.MapTypeId.ROADMAP
+                          };
+                          // Define the map
+                          map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+                          });
+
+    function addMarker(lat, lng, name){
+            var point = new google.maps.LatLng(lat, lng);
+            var marker = new google.maps.Marker({position: point,
+                                                map: map,
+                                                title: name
+                                                });
+
+                            };
+
+        </script>   
+
+  </head>
+  <body>
+  <div id="map-canvas"></div>
+  </body>
+</html>
+{% for marker in markers %}
+  addMaker({{marker.lat}},{{marker.long}},'{{marker.name}}');
+{% endfor %}

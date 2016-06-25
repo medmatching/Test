@@ -1,0 +1,17 @@
+<form action="metric/" class="form">
+        
+        <label for="inputAddress" class="sr-only">Email address</label>
+        {{ form.your_age }}
+
+        <label for="inputAddress" class="sr-only">Email address</label>
+        <input style="margin-top: 10px; margin-bottom: 10px;" id="inputEmail" class="form-control" placeholder="Enter an address, city or zip code" required="" autofocus="" type="text">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input style="border-bottom-width: 1px; margin-bottom: 10px;" id="inputPassword" class="form-control" placeholder="Enter your condition here or symptoms above" required="" type="text">
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="searchButton">Search</button>
+      </form>
+
+     </div>
+   </div>
+</div>
+
