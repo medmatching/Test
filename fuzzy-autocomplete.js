@@ -72,6 +72,7 @@ function fuzzyAutocomplete(input, data) {
             'overflow-x': 'hidden',
             'font-family': input.css('font-family'),
             'font-size' : input.css('font-size'),
+            'font-color': 'blue'
             'z-index' : '10'
         }).insertAfter(input).show();
     };
