@@ -65,7 +65,7 @@ function fuzzyAutocomplete(input, data) {
             'left': input.position().left,
             'width': input.width() + parseFloat(input.css('padding-left'),10) + parseInt(input.css('border-left-width'),10) + 1,
             'position': 'absolute',
-            'background-color': "green",
+            'background-color': "#00ff00",
             'border': '1px solid #dddddd',
             'max-height': '150px',
             'overflow': 'scroll',
