@@ -55,7 +55,7 @@ function fuzzyAutocomplete(input, data) {
                 res.empty().hide();
             })
             p.mouseenter(function() {
-                $(this).css("background-color", "red");
+                $(this).css("background-color", "#DC143C");
             }).mouseleave(function() {
                 $(this).css("background-color", "#8FBC8F");
             });
