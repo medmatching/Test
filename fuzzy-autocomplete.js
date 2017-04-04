@@ -57,7 +57,7 @@ function fuzzyAutocomplete(input, data) {
             p.mouseenter(function() {
                 $(this).css("background-color", "#DC143C");
             }).mouseleave(function() {
-                $(this).css("background-color", "#8FBC8F");
+                $(this).css("background-color", "#2E8B57");
             });
             res.append(p);
         });
@@ -65,7 +65,7 @@ function fuzzyAutocomplete(input, data) {
             'left': input.position().left,
             'width': input.width() + parseFloat(input.css('padding-left'),10) + parseInt(input.css('border-left-width'),10) + 1,
             'position': 'absolute',
-            'background-color': "#8FBC8F",
+            'background-color': "#2E8B57",
             'border': '1px solid #dddddd',
             'max-height': '150px',
             'overflow': 'scroll',
